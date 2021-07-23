@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+    background-color: #808080;
+    color: white;
+    background-image: url(http://www.transparenttextures.com/patterns/dark-dotted-2.png);
+    background-repeat: repeat;
+    height: 100px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+#h1Title {
+    text-align: center;
+    padding-top: 15px;
+}
+
+h2 {
+    text-align: center;
+    background-color: #FFFFF0;
+    background-image: url(http://www.transparenttextures.com/patterns/dark-dotted-2.png);
+    background-repeat: repeat;
+    margin: 0;
+    height: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.inputField {
+    height: 30px;
+    width: 200px;
+    margin: 10px;
+    font-size: 24px;
+    top: 100px;
+    margin-top: 20px;
+}
+#addEmployeeTitle {
+    text-align: center;
+    padding-top: 30px;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+.tableWhole {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 24px;
+}
+#submitButton {
+    width: 50px;
+    height: 30px;
+}
+th, td {
+
+}
+
+
+h3 {
+    background-color: #808080;
+    background-image: url(http://www.transparenttextures.com/patterns/dark-dotted-2.png);
+    background-repeat: repeat;
+    height: 400px;
+    margin: 0;
+}
