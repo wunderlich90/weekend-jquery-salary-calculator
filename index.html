@@ -26,7 +26,7 @@
             class="inputField" 
             id="firstName" 
             type="text" 
-            placeholder="First name"
+            placeholder="First Name"
             >
         <input 
             class="inputField"
@@ -51,20 +51,41 @@
             id="annualSalary" 
             type="number" 
             placeholder="Annual Salary">
+
         <button id="submitButton">Submit</button>
-        <table class="tableWhole">
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>ID Number</th>
-                <th>Title</th>
-                <th>Annual Salary</th>
-                <th>Delete</th>
-            </tr>
+
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th class="tableHead">First Name</th>
+                    <th class="tableHead">Last Name</th>
+                    <th class="tableHead">ID Number</th>
+                    <th class="tableHead">Title</th>
+                    <th class="tableHead">Annual Salary</th>
+                    <th class="tableHead">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tableRow">
+                    <td placeholder="First Name" class="infoFields"></td>
+                    <td placeholder="Last Name" class="infoFields"></td>
+                    <td placeholder="ID Number" class="infoFields"></td>
+                    <td placeholder="Title" class="infoFields"></td>
+                    <td placeholder="Annual Salary" class="infoFields"></td>
+                    <td>
+                        <button id="deleteButton">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        
         </table>
     </h2>
 
-    <h3></h3>
+    <h3 id="displayTotal">
+        <div class="totalSalaries">
+            Total Salary Cost: $<span id="salaryTotal"></span>
+        </div>
+    </h3>
 </body>
 
 </html>
