@@ -75,6 +75,7 @@ h3 {
     border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
+    font-size: 30px;
 }
 thead, tr, th, td {
     border: 1px solid black;
