@@ -12,7 +12,7 @@ function onReady() {
     $(document).on('click', '#submitButton', clickSubmit);
 
     // Listener for delete button
-    $(document).on('click', '#deleteButton', deleteEmployee);
+    $(document).on('click', '.deleteButton', deleteEmployee);
     
 }
 
@@ -42,6 +42,11 @@ function clickSubmit (event) {
     // Set total salaries
     $('#salaryTotal').text(totalSalaries.toFixed(2));
 
+    let monthlySalaryTotal = monthlySalaries();
+
+    // Set monthly salaries
+    $('#monthlyTotal').text(monthlySalaryTotal.toFixed(2));
+
     
 }
 
@@ -62,11 +67,13 @@ function getEmployeeInfo() {
 function displayEmployeesOnDOM() {
 
     // empty display to start
-    $('#employeeTable').empty();
+    $('#tableBody').empty();
 
+    console.log($('#tableBody'));
+    
     // Loop through employees array and display each one on the DOM
     for (let employee of employeesArray) {
-        $('.tableRow').append(`
+        $('#tableBody').append(`
             <tr>
                 <td>${employee.firstName}</td>
                 <td>${employee.lastName}</td>
@@ -83,9 +90,7 @@ function sumSalaries() {
     let totalSalaries = 0;
     for(employee of employeesArray) {
         totalSalaries += employee.annualSalary;
-        if (totalSalaries>20000) {
-            $('.totalSalaries').css('background-color', 'red');
-        }
+
     }
 
     return totalSalaries;
@@ -98,3 +103,14 @@ function deleteEmployee(event) {
     
     
 }
+
+function monthlySalaries() {
+    let totalSalaries = sumSalaries();
+    let monthlySalaryTotal = 0;
+    monthlySalaryTotal = totalSalaries / 12;
+    if (monthlySalaryTotal>20000) {
+        $('.monthlySalaries').css('background-color', 'red');
+    }
+    return monthlySalaryTotal;
+}
+

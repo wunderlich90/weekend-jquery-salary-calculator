@@ -55,7 +55,7 @@
         <button id="submitButton">Submit</button>
 
         <table id="employeeTable">
-            <thead>
+            <thead id="tableHead">
                 <tr>
                     <th class="tableHead">First Name</th>
                     <th class="tableHead">Last Name</th>
@@ -65,8 +65,8 @@
                     <th class="tableHead">Delete</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr class="tableRow">
+            <tbody id="tableBody">
+                <tr id="tableRow">
                     <td placeholder="First Name" class="infoFields"></td>
                     <td placeholder="Last Name" class="infoFields"></td>
                     <td placeholder="ID Number" class="infoFields"></td>
@@ -84,6 +84,10 @@
     <h3 id="displayTotal">
         <div class="totalSalaries">
             Total Salary Cost: $<span id="salaryTotal"></span>
+        </div>
+
+        <div class="monthlySalaries">
+            Monthly Salary Cost: $<span id="monthlyTotal"></span>
         </div>
     </h3>
 </body>
